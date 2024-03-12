@@ -78,7 +78,7 @@ twilio==7.9.3
 typing_extensions==4.3.0
 uritemplate==4.1.1
 urllib3==1.26.9
-vine==5.0.0
+vine
 wcwidth==0.2.5
 wrapt==1.14.1
 pre-commit==3.4.0
