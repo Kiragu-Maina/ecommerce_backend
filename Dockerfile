@@ -15,7 +15,7 @@ ENV PIP_DEFAULT_TIMEOUT=100 \
 # Update and install dependencies
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install --no-install-recommends python3-dev gcc libc-dev vim curl postgresql-client && \
+    apt-get -y install --no-install-recommends python3-dev gcc libc-dev libffi-dev vim curl postgresql-client && \
     # Clean up
     apt-get autoremove -y && \
     apt-get clean && \

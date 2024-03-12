@@ -2,6 +2,7 @@
 
 echo "Collecting static files.."
 python manage.py collectstatic --noinput
+python manage.py initadmin
 
 if [ "$RUN_MIGRATIONS" = "True" ]; then
     echo "Running migrations..."
