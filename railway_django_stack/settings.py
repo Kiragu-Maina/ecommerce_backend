@@ -40,9 +40,26 @@ INSTALLED_APPS = [
     "django_celery_beat",
     "django_celery_results",
     # Your custom apps would come here
+    "users",
+    "products",
+    "orders",
+    "payment",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "dj_rest_auth",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google",
+    "dj_rest_auth.registration",
+    "phonenumber_field",
+    "corsheaders",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
